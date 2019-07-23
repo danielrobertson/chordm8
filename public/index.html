@@ -32,6 +32,9 @@
             .logo {
                 width: 125px;
             }
+            .about-container {
+                line-height: 22px;
+            }
             .main {
                 display: flex;
                 flex-direction: column;
@@ -40,7 +43,7 @@
                 /* border: 1px blue dashed; */
                 text-align: center;
                 width: 100%;
-                padding: 50px 80px 0 80px;
+                padding: 50px 60px 0 60px;
             }
             .chord-container {
                 flex: 1;
@@ -51,7 +54,7 @@
                 margin: 0px;
             }
             .chord-card {
-                border: 2px grey dashed;
+                /* border: 2px grey dashed; */
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -136,23 +139,27 @@
             <section class="sidebar">
                 <img src="assets/logo.png" alt="logo" class="logo" />
                 <h1 class="title">Chord Rankings 🎵</h1>
-                <p class="tagline">Curated chord progression inspirations.</p>
-                <a
-                    class="theory-link"
-                    target="_blank"
-                    href="https://www.musictheoryacademy.com/understanding-music/chord-progressions/"
-                    >The Music Theory of Chord Progressions</a
-                >
-                <p class="about">
-                    That indescribable hype in an EDM song, the tug on your
-                    heart, or spark of excitement in your favorite song? You can
-                    thank chord progressions for that!
-                </p>
-                <p class="like-cta">
-                    Take inspiration for your next song or just explore! Hit
-                    <i class="red-heart fas fa-heart"></i> to 'like' your
-                    favorites!
-                </p>
+                <div class="about-container">
+                    <p class="tagline">
+                        Curated chord progression inspirations.
+                    </p>
+                    <a
+                        class="theory-link"
+                        target="_blank"
+                        href="https://www.musictheoryacademy.com/understanding-music/chord-progressions/"
+                        >The Music Theory of Chord Progressions</a
+                    >
+                    <p class="about">
+                        That indescribable hype in an EDM song, the tug on your
+                        heart, or spark of excitement in your favorite song? You
+                        can thank chord progressions for that!
+                    </p>
+                    <p class="like-cta">
+                        Take inspiration for your next song or just explore! Hit
+                        <i class="red-heart fas fa-heart"></i> to 'like' your
+                        favorites!
+                    </p>
+                </div>
             </section>
             <ul class="chord-container">
                 <li class="chord-card">
