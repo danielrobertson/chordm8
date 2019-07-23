@@ -10,6 +10,12 @@
             href="https://fonts.googleapis.com/css?family=Lato&display=swap"
             rel="stylesheet"
         />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+            integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+            crossorigin="anonymous"
+        />
         <title>Chord Rankings</title>
         <style>
             * {
@@ -21,8 +27,11 @@
                 font-family: "Lato", sans-serif;
                 line-height: 25px;
             }
+            .title {
+                font-size: 35px;
+            }
             .logo {
-                width: 185px;
+                width: 125px;
             }
             .main {
                 display: flex;
@@ -46,10 +55,14 @@
             .chord-card {
                 /* border: 2px grey dashed; */
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                width: 225px;
-                height: 250px;
+                width: 215px;
+                height: 240px;
+            }
+            .like-btn {
+                color: #aaafc6;
             }
             .tagline {
                 margin: 16px 0px;
@@ -61,8 +74,11 @@
             .theory-link {
                 margin: 16px 0px;
             }
-            .vote {
+            .like-cta {
                 margin: 16px 0px;
+            }
+            .red-heart {
+                color: #ff4027;
             }
             .by-a {
                 display: none;
@@ -92,6 +108,9 @@
             }
 
             @media only screen and (min-width: 992px) {
+                .logo {
+                    width: 185px;
+                }
                 .main {
                     display: flex;
                     flex-flow: row wrap;
@@ -114,6 +133,7 @@
                 <p class="tagline">Curated chord progression inspirations.</p>
                 <a
                     class="theory-link"
+                    target="_blank"
                     href="https://www.musictheoryacademy.com/understanding-music/chord-progressions/"
                     >The Music Theory of Chord Progressions</a
                 >
@@ -122,26 +142,76 @@
                     heart, or spark of excitement in your favorite song? You can
                     thank chord progressions for that!
                 </p>
-                <p class="vote">
-                    Take inspiration for your next song or simply explore! Click
-                    ♥️ to vote your favorite!
+                <p class="like-cta">
+                    Take inspiration for your next song or just explore! Hit
+                    <i class="red-heart fas fa-heart"></i> to 'like' your
+                    favorites!
                 </p>
             </section>
             <ul class="chord-container">
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
-                <li class="chord-card">I-V-IV</li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn">
+                        <i class="fas fa-heart"></i>
+                        23
+                    </div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 12</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 0</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 56</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 24</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 23</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 67</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 534</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 34</div>
+                </li>
+                <li class="chord-card">
+                    <h3 class="chord-abbrev">
+                        I-V-IV
+                    </h3>
+                    <div class="like-btn"><i class="fas fa-heart"></i> 67</div>
+                </li>
             </ul>
             <a target="_blank" class="by-a" href="https://danielrobertson.me/"
                 ><img src="assets/headshot.png" />
