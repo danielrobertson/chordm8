@@ -9,8 +9,8 @@ const App = () => {
       <Sidebar />
       <Chords />
 
-      <a target="_blank" className="by-a" href="https://danielrobertson.me/">
-        <img src="assets/headshot.png" />
+      <a className="by-a" href="https://danielrobertson.me/">
+        <img src="assets/headshot.png" alt="author" />
         <p>by @danielrobertson</p>
       </a>
     </div>

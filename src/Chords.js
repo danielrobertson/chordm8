@@ -2,6 +2,7 @@ import React from "react";
 import Progression from "./Progression";
 
 const Chords = () => {
+  // TODO move to a database
   const progressions = [
     { name: "I-V-IV", likes: 23 },
     { name: "I–V–vi–IV", likes: 256 },
@@ -18,13 +19,13 @@ const Chords = () => {
     { name: "I-V-IV", likes: 100 },
     { name: "I-V-IV", likes: 1 },
     { name: "I-V-IV", likes: 0 },
-    { name: "I-V-IV", likes: 0 }
+    { name: "I-V-IV", likes: 0 },
   ];
 
   return (
     <ul className="chord-container">
-      {progressions.map(({ name, likes }) => (
-        <Progression name={name} likes={likes} />
+      {progressions.map(({ name, likes }, i) => (
+        <Progression name={name} likes={likes} key={i} />
       ))}
     </ul>
   );
